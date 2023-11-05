@@ -21,7 +21,7 @@ body {
   }
 
   .card-wrapper {
-    @apply bg-light-900 dark:dark-gradient shadow-light-100 dar;
+    @apply bg-light-900 dark:dark-gradient shadow-light-100;
   }
 
   .btn {
@@ -37,7 +37,7 @@ body {
   }
 
   .markdown {
-    @apply max-w-full prose dark:prose-p: text-light-700 dark:pros;
+    @apply max-w-full prose dark:prose-p: text-light-700 dark:prose;
   }
 
   .primary-gradient {
@@ -50,7 +50,7 @@ body {
   }
 
   .tab {
-    @apply min-h-full dark:bg-dark-400 bg-light-800 text-light-5;
+    @apply min-h-full dark:bg-dark-400 bg-light-800 text-light-500;
   }
 }
 
@@ -105,12 +105,9 @@ code {
   overflow-wrap: break-word;
   word-wrap: break-word;
   -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things whereve
-word-break
-:
-break-all
-;
-/* Instead use this non-standard one: */
+  /* This is the dangerous one in WebKit, as it breaks things whereve */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
   word-break: break-word;
   /* Adds a hyphen where the word breaks, if supported (No Blink) */
   -ms-hyphens: auto;
