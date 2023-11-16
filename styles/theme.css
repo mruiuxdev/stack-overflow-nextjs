@@ -176,11 +176,11 @@
   }
 
   .placeholder {
-    @apply placeholde: text-light-400 dark:placeholder: text-light-;
+    @apply placeholder:text-light-400 dark:placeholder:text-light-400;
   }
 
   .invert-colors {
-    @appl invert dark:invert-0;
+    @apply invert dark:invert-0;
   }
 
   .shadow-light100_dark100 {
@@ -196,7 +196,10 @@
   }
 
   .dark-gradient {
-    background: linear-gradient
-      (232deg, rgba (23, 28, 35, 0.41) 0%, rgba (19, 22, 28, 0.7) 100%);
+    background: linear-gradient(
+      232deg,
+      rgba(23, 28, 35, 0.41) 0%,
+      rgba(19, 22, 28, 0.7) 100%
+    );
   }
 }
