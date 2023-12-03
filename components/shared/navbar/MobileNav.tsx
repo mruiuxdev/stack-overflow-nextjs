@@ -65,7 +65,7 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="background-light900_dark200 border-none"
+        className="background-light900_dark200 flex h-screen flex-col justify-between overflow-y-auto border-none"
       >
         <Link href="/" className="flex items-center gap-1">
           <Image
@@ -78,9 +78,8 @@ const MobileNav = () => {
             Dev <span className="text-primary-500">Overflow</span>
           </p>
         </Link>
+        <NavContent />
         <div>
-          <NavContent />
-
           <SignedOut>
             <div className="flex flex-col gap-3">
               <SheetClose asChild>
